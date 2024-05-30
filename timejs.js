@@ -24,7 +24,7 @@ var x = setInterval(function() {
   // If the count down is finished, write some text
   if (distance0 < 0) {
     clearInterval(x);
-    document.getElementById("live1").innerHTML = "🔴Live Now";
+    document.getElementById("live1").innerHTML = "{(img height='15' src='https://i.giphy.com/media/HdjA2isuJE7ScQe0O2/giphy.webp' width='40')}";
   }
 }, 1000);
 <!--live-2-->
