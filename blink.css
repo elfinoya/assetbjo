@@ -1,0 +1,10 @@
+.blink {
+            animation: blinker 1.5s linear infinite;
+            color: red;
+            font-family: sans-serif;
+        }
+@keyframes blinker{50%{opacity:0}}
+@-webkit-keyframes blink {
+    from {opacity: 1.0;}
+    to {opacity: 0.0;}
+}
