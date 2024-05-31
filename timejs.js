@@ -24,7 +24,7 @@ var x = setInterval(function() {
   // If the count down is finished, write some text
   if (distance0 < 0) {
     clearInterval(x);
-    document.getElementById("live1").innerHTML = "🔴 Live Now";
+    document.getElementById("live1").innerHTML = "Live Now 🔴";
   }
 }, 1000);
 <!--live-2-->
@@ -53,7 +53,7 @@ var x = setInterval(function() {
   // If the count down is finished, write some text
   if (distance1 < 0) {
     clearInterval(x);
-    document.getElementById("live2").innerHTML = "🔴 Live Now";
+    document.getElementById("live2").innerHTML = "Live Now 🔴";
   }
 }, 1000);
 <!--live-3-->
@@ -82,7 +82,7 @@ var x = setInterval(function() {
   // If the count down is finished, write some text
   if (distance2 < 0) {
     clearInterval(x);
-    document.getElementById("live3").innerHTML = "🔴Live Now";
+    document.getElementById("live3").innerHTML = "Live Now 🔴";
   }
 }, 1000);
 <!--live-4-->
@@ -111,7 +111,7 @@ var x = setInterval(function() {
   // If the count down is finished, write some text
   if (distance3 < 0) {
     clearInterval(x);
-    document.getElementById("live4").innerHTML = "🔴Live Now";
+    document.getElementById("live4").innerHTML = "Live Now 🔴";
   }
 }, 1000);
 <!--live-5-->
@@ -140,7 +140,7 @@ var x = setInterval(function() {
   // If the count down is finished, write some text
   if (distance4 < 0) {
     clearInterval(x);
-    document.getElementById("live5").innerHTML = "🔴Live Now";
+    document.getElementById("live5").innerHTML = "Live Now 🔴";
   }
 }, 1000);
 <!--live-6-->
@@ -169,7 +169,7 @@ var x = setInterval(function() {
   // If the count down is finished, write some text
   if (distance5 < 0) {
     clearInterval(x);
-    document.getElementById("live6").innerHTML = "🔴Live Now";
+    document.getElementById("live6").innerHTML = "Live Now 🔴";
   }
 }, 1000);
 <!--live-7-->
@@ -198,7 +198,7 @@ var x = setInterval(function() {
   // If the count down is finished, write some text
   if (distance6 < 0) {
     clearInterval(x);
-    document.getElementById("live7").innerHTML = "🔴Live Now";
+    document.getElementById("live7").innerHTML = "Live Now 🔴";
   }
 }, 1000);
 /*
