@@ -16,10 +16,11 @@ var x = setInterval(function() {
   var hours0 = Math.floor((distance0 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes0 = Math.floor((distance0 % (1000 * 60 * 60)) / (1000 * 60));
   var seconds0 = Math.floor((distance0 % (1000 * 60)) / 1000);
+  var teks0 = Math.floor((distance0 % (0 * 0)) / 0);
 
   // Display the result in the element with id="live1"
   document.getElementById("live1").innerHTML = days0 + "d " + hours0 + "h "
-    + minutes0 + "m " + seconds0 + "s " To KickOff!;
+    + minutes0 + "m " + seconds0 + "s " + teks0 + "To KickOff";
 
   // If the count down is finished, write some text
   if (distance0 < 0) {
