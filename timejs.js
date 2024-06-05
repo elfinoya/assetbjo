@@ -19,7 +19,7 @@ var x = setInterval(function() {
 
   // Display the result in the element with id="live1"
   document.getElementById("live1").innerHTML = days0 + "d " + hours0 + "h "
-    + minutes0 + "m " + seconds0 + "s " "to Kickoff!";
+    + minutes0 + "m " + seconds0 + "s " To KickOff!;
 
   // If the count down is finished, write some text
   if (distance0 < 0) {
