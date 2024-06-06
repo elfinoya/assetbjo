@@ -228,9 +228,39 @@ var x = setInterval(function() {
     + minutes7 + "m " + seconds7 + "s ";
 
   // If the count down is finished, write some text
-  if (distance6 < 0) {
+  if (distance7 < 0) {
     clearInterval(x);
     document.getElementById("live8").innerHTML = "LIVE NOW 🔴";
+  }
+}, 1000);
+
+<!--live-9-->
+// Set the date we're counting down to
+var countDownDate8 = new Date("June 06, 2024 20:00:00 GMT+07:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now8 = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance8 = countDownDate8 - now8;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days8 = Math.floor(distance8 / (1000 * 60 * 60 * 24));
+  var hours8 = Math.floor((distance8 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes8 = Math.floor((distance8 % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds8 = Math.floor((distance8 % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="live7"
+  document.getElementById("live9").innerHTML = days8 + "d " + hours8 + "h "
+    + minutes8 + "m " + seconds8 + "s ";
+
+  // If the count down is finished, write some text
+  if (distance8 < 0) {
+    clearInterval(x);
+    document.getElementById("live9").innerHTML = "LIVE NOW 🔴";
   }
 }, 1000);
 /*
