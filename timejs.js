@@ -176,7 +176,7 @@ var x = setInterval(function() {
 }, 1000);
 <!--live-7-->
 // Set the date we're counting down to
-var countDownDate6 = new Date("May 27, 2024 01:15:00").getTime();
+var countDownDate6 = new Date("June 06, 2024 19:00:00 GMT+07:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -201,6 +201,36 @@ var x = setInterval(function() {
   if (distance6 < 0) {
     clearInterval(x);
     document.getElementById("live7").innerHTML = "LIVE NOW 🔴";
+  }
+}, 1000);
+
+<!--live-8-->
+// Set the date we're counting down to
+var countDownDate7 = new Date("June 06, 2024 19:00:00 GMT+07:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now7 = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance7 = countDownDate7 - now7;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days7 = Math.floor(distance7 / (1000 * 60 * 60 * 24));
+  var hours7 = Math.floor((distance7 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes7 = Math.floor((distance7 % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds7 = Math.floor((distance7 % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="live7"
+  document.getElementById("live8").innerHTML = days7 + "d " + hours7 + "h "
+    + minutes7 + "m " + seconds7 + "s ";
+
+  // If the count down is finished, write some text
+  if (distance6 < 0) {
+    clearInterval(x);
+    document.getElementById("live8").innerHTML = "LIVE NOW 🔴";
   }
 }, 1000);
 /*
