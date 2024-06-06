@@ -253,13 +253,13 @@ var x = setInterval(function() {
   var secondsA = Math.floor((distanceA % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="live7"
-  document.getElementById("live9").innerHTML = daysA + "d " + hoursA + "h "
+  document.getElementById("liveA").innerHTML = daysA + "d " + hoursA + "h "
     + minutesA + "m " + secondsA + "s ";
 
   // If the count down is finished, write some text
   if (distanceA < 0) {
     clearInterval(x);
-    document.getElementById("live9").innerHTML = "LIVE NOW 🔴";
+    document.getElementById("liveA").innerHTML = "LIVE NOW 🔴";
   }
 }, 1000);
 /*
