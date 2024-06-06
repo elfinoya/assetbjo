@@ -233,7 +233,6 @@ var x = setInterval(function() {
     document.getElementById("live8").innerHTML = "LIVE NOW 🔴";
   }
 }, 1000);
-
 <!--live-9-->
 // Set the date we're counting down to
 var countDownDate8 = new Date("June 06, 2024 20:00:00 GMT+07:00").getTime();
