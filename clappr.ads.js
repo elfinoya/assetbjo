@@ -3,7 +3,7 @@
     var Video = function(src, skip, timeout) {
         this.text = {
             wait: 'Wait % seconds...',
-            skip: 'SKIP ADS >>>'
+            skip: 'SKIP ADS ⏩️'
         };
         this.onEnd = false;
         this.wrapper = this._initWrapper();
