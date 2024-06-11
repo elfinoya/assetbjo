@@ -264,31 +264,31 @@ var x = setInterval(function() {
 }, 1000);
 <!--live-10-->
 // Set the date we're counting down to
-var countDownDateB = new Date("June 06, 2024 23:00:00 GMT+07:00").getTime();
+var countDownDateC = new Date("June 06, 2024 23:00:00 GMT+07:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
 
   // Get today's date and time
-  var nowB = new Date().getTime();
+  var nowC = new Date().getTime();
 
   // Find the distance between now and the count down date
-  var distanceB = countDownDateB - nowB;
+  var distanceC = countDownDateC - nowC;
 
   // Time calculations for days, hours, minutes and seconds
-  var daysB = Math.floor(distanceB / (1000 * 60 * 60 * 24));
-  var hoursB = Math.floor((distanceB % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutesB = Math.floor((distanceB % (1000 * 60 * 60)) / (1000 * 60));
-  var secondsB = Math.floor((distanceB % (1000 * 60)) / 1000);
+  var daysC = Math.floor(distanceC / (1000 * 60 * 60 * 24));
+  var hoursC = Math.floor((distanceC % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutesC = Math.floor((distanceC % (1000 * 60 * 60)) / (1000 * 60));
+  var secondsC = Math.floor((distanceC % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="live7"
-  document.getElementById("liveB").innerHTML = daysB + "d " + hoursB + "h "
-    + minutesB + "m " + secondsB + "s ";
+  document.getElementById("liveC").innerHTML = daysC + "d " + hoursC + "h "
+    + minutesC + "m " + secondsC + "s ";
 
   // If the count down is finished, write some text
-  if (distanceB < 0) {
+  if (distanceC < 0) {
     clearInterval(x);
-    document.getElementById("liveB").innerHTML = "LIVE NOW 🔴";
+    document.getElementById("liveC").innerHTML = "LIVE NOW 🔴";
   }
 }, 1000);
 /*
