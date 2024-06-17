@@ -8,4 +8,4 @@ var bulan=now.getMonth();
 var tanggal=now.getDate();
 var hariarray=new Array("Minggu","Senin","Selasa","Rabu","Kamis","Jum'at","Sabtu");
 var bulanarray=new Array("Jan","Feb","Mar","Apr","Mei","Jun","Jul","Agst","Sep","Okt","Nov","Des");
-document.write(hariarray[hari]+" "+tanggal+" "+bulanarray[bulan]+" "+tahun);
+document.write(hariarray[hari]+", "+tanggal+" "+bulanarray[bulan]+" "+tahun);
