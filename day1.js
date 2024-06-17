@@ -18,7 +18,7 @@ var day = date.getDate() +1;
 
 var month = date.getMonth();
 
-var thisDay = date.getDay(),
+var thisDay = date.getDay() +1,
 
     thisDay = myDays[thisDay];
 
