@@ -11,9 +11,10 @@ var myDays = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
 var date = new Date();
 
 var tomorrow = new Date();
+
 tomorrow.setDate(tomorrow.getDate() + 1);
 
-var day = date.getDate();
+var day = date.getDate() +1;
 
 var month = date.getMonth();
 
