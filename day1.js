@@ -2,7 +2,7 @@
   */
 
 // Get today's current date.
-<script type='text/javascript'>
+
 
 var months = ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Agst', 'Sept', 'Okt', 'Nov', 'Des'];
 
@@ -24,4 +24,3 @@ var year = (yy < 1000) ? yy + 1900 : yy;
 
 document.write(thisDay + ', ' + day + ' ' + months[month] + ' ' + year);
 
-</script>
