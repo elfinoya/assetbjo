@@ -1,28 +1,42 @@
-/* http://greentooth.xtgem.com
+/* http://bejo-tv1.blogspot.com
   */
 
 // Get today's current date.
-var now = new Date();
-
-// Array list of days.
-var days = new Array('Sun','Mon','Tue','Wed','Thu','Fri','Sat');
-
-// Array list of months.
-var months = new Array('Jan','Feb','Mar','Apr','May','June','July','Aug','Sept','Oct','Nov','Dec');
-
-// Calculate the number of the current day in the week.
-var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
-
-// Calculate four digit year.
-function fourdigits(number)	{
-	return (number < 1000) ? number + 1900 : number;
-								}
-
-// Join it all together
-today =  days[now.getDay()] + ", " +
-              months[now.getMonth()] + " " +
-               date + ", " +
-                (fourdigits(now.getYear())) ;
+var date = new Date();
+var tahun = date.getFullYear();
+var bulan = date.getMonth();
+var tanggal = date.getDate();
+var hari = date.getDay();
+var jam = date.getHours();
+var menit = date.getMinutes();
+var detik = date.getSeconds();
+switch(hari) {
+ case 0: hari = "Minggu"; break;
+ case 1: hari = "Senin"; break;
+ case 2: hari = "Selasa"; break;
+ case 3: hari = "Rabu"; break;
+ case 4: hari = "Kamis"; break;
+ case 5: hari = "Jum'at"; break;
+ case 6: hari = "Sabtu"; break;
+}
+switch(bulan) {
+ case 0: bulan = "Januari"; break;
+ case 1: bulan = "Februari"; break;
+ case 2: bulan = "Maret"; break;
+ case 3: bulan = "April"; break;
+ case 4: bulan = "Mei"; break;
+ case 5: bulan = "Juni"; break;
+ case 6: bulan = "Juli"; break;
+ case 7: bulan = "Agustus"; break;
+ case 8: bulan = "September"; break;
+ case 9: bulan = "Oktober"; break;
+ case 10: bulan = "November"; break;
+ case 11: bulan = "Desember"; break;
+}
+var tampilTanggal = "Tanggal: " + hari + ", " + tanggal + " " + bulan + " " + tahun;
+var tampilWaktu = "Jam: " + jam + ":" + menit + ":" + detik;
+console.log(tampilTanggal);
+console.log(tampilWaktu);
 
 // Print out the data.
 document.write("" +today+ "");
