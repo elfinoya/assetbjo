@@ -293,33 +293,35 @@ var x = setInterval(function() {
 }, 1000);
 
 
-<!--live-13-->
+<!--live-Z-->
 // Set the date we're counting down to
-var countDownDate12 = new Date("June 29, 2024 13:40:00 GMT+07:00").getTime();
+var countDownDateZ = new Date("June 29, 2024 13:40:00 GMT+07:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
 
   // Get today's date and time
-  var now12 = new Date().getTime();
+  var nowZ = new Date().getTime();
 
   // Find the distance between now and the count down date
-  var distance12 = countDownDate12 - now12;
+  var distanceZ = countDownDateZ - nowZ;
 
   // Time calculations for days, hours, minutes and seconds
-  var days12 = Math.floor(distance12 / (1000 * 60 * 60 * 24));
-  var hours12 = Math.floor((distance12 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes12 = Math.floor((distance12 % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds12 = Math.floor((distance12 % (1000 * 60)) / 1000);
+  var daysZ = Math.floor(distanceZ / (1000 * 60 * 60 * 24));
+  var hoursZ = Math.floor((distanceZ % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutesZ = Math.floor((distanceZ % (1000 * 60 * 60)) / (1000 * 60));
+  var secondsZ = Math.floor((distance0 % (1000 * 60)) / 1000);
+  var teksZ = "To";
 
-  // Display the result in the element with id="live7"
-  document.getElementById("live13").innerHTML = days12 + "d " + hours12 + "h "
-    + minutes12+ "m " + seconds12 + "s ";
+  // Display the result in the element with id="live1"
+  document.getElementById("liveZ").innerHTML = daysZ + "d " + hoursZ + "h "
+    + minutesZ + "m " + secondsZ + "s ";
+ //   + minutes0 + "m " + seconds0 + "s " + teks0 + " KickOff";
 
   // If the count down is finished, write some text
-  if (distance12 < 0) {
+  if (distanceZ < 0) {
     clearInterval(x);
-    document.getElementById("live13").innerHTML = "LIVE NOW 🔴";
+    document.getElementById("liveZ").innerHTML = "LIVE NOW 🔴";
   }
 }, 1000);
 
