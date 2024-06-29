@@ -314,14 +314,14 @@ var x = setInterval(function() {
   var teksZ = "To";
 
   // Display the result in the element with id="live1"
-  document.getElementById("live20").innerHTML = daysZ + "d " + hoursZ + "h "
+  document.getElementById("liveZ").innerHTML = daysZ + "d " + hoursZ + "h "
     + minutesZ + "m " + secondsZ + "s ";
  //   + minutes0 + "m " + seconds0 + "s " + teks0 + " KickOff";
 
   // If the count down is finished, write some text
   if (distanceZ < 0) {
     clearInterval(x);
-    document.getElementById("live20").innerHTML = "LIVE NOW 🔴";
+    document.getElementById("liveZ").innerHTML = "LIVE NOW 🔴";
   }
 }, 1000);
 
