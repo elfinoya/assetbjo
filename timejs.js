@@ -310,7 +310,7 @@ var x = setInterval(function() {
   var daysZ = Math.floor(distanceZ / (1000 * 60 * 60 * 24));
   var hoursZ = Math.floor((distanceZ % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutesZ = Math.floor((distanceZ % (1000 * 60 * 60)) / (1000 * 60));
-  var secondsZ = Math.floor((distance0 % (1000 * 60)) / 1000);
+  var secondsZ = Math.floor((distanceZ % (1000 * 60)) / 1000);
   var teksZ = "To";
 
   // Display the result in the element with id="live1"
