@@ -293,7 +293,7 @@ var x = setInterval(function() {
 }, 1000);
 
 
-<!--live-Z-->
+<!--live-20-->
 // Set the date we're counting down to
 var countDownDateZ = new Date("June 29, 2024 13:40:00 GMT+07:00").getTime();
 
@@ -314,14 +314,14 @@ var x = setInterval(function() {
   var teksZ = "To";
 
   // Display the result in the element with id="live1"
-  document.getElementById("liveZ").innerHTML = daysZ + "d " + hoursZ + "h "
+  document.getElementById("live20").innerHTML = daysZ + "d " + hoursZ + "h "
     + minutesZ + "m " + secondsZ + "s ";
  //   + minutes0 + "m " + seconds0 + "s " + teks0 + " KickOff";
 
   // If the count down is finished, write some text
   if (distanceZ < 0) {
     clearInterval(x);
-    document.getElementById("liveZ").innerHTML = "LIVE NOW 🔴";
+    document.getElementById("live20").innerHTML = "LIVE NOW 🔴";
   }
 }, 1000);
 
