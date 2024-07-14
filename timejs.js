@@ -1,6 +1,6 @@
 <!--live-1-->
 // Set the date we're counting down to
-var countDownDate0 = new Date("Juli 14, 2024 17:00:00 GMT+07:00").getTime();
+var countDownDate0 = new Date("Juli 15, 2024 02:00:00 GMT+07:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
