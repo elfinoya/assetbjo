@@ -1,19 +1,3 @@
-<style>
-       
-        #clock-container {
-            text-align: center;
-        }
-
-        #clock {
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-
-        #calendar {
-            font-size: 1.2em;
-        }
-    </style>
-<script>
         function updateClock() {
             const now = new Date();
             const hours = now.getHours().toString().padStart(2, '0');
@@ -38,7 +22,7 @@
         // Initial update
         updateClock();
         updateCalendar();
-    </script>
+
 
 
 // My clock 2018-07-25, 00:26:00 (GMT+7)
