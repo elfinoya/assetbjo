@@ -1,0 +1,72 @@
+.frame-tombol{
+    
+    padding: 20px 12px;
+    margin-bottom: 10px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: #428bca;
+    border-color: #357ebd;
+    }
+
+.tombol-twitter {
+    background-color: #00acee;
+    border-radius: 0;
+    color: #fff
+}
+.tombol-twitter:link, .tombol-twitter:visited {
+    color: #fff
+}
+.tombol-twitter:active, .tombol-twitter:hover {
+    background-color: #0087bd;
+    color: #fff
+}
+.tombol-facebook {
+    background-color: #3b5998;
+    border-radius: 0;
+    color: #fff
+}
+.tombol-facebook:link, .tombol-facebook:visited {
+    color: #fff
+}
+.tombol-facebook:active, .tombol-facebook:hover {
+    background-color: #30477a;
+    color: #fff
+}
+.tombol-googleplus {
+    background-color: #e93f2e;
+    border-radius: 0;
+    color: #fff
+}
+.tombol-googleplus:link, .tombol-googleplus:visited {
+    color: #fff
+}
+.tombol-googleplus:active, .tombol-googleplus:hover {
+    background-color: #ba3225;
+    color: #fff
+}
+.tombol-pinterest {
+    background-color: #cc2127;
+    border-radius: 0;
+    color: #fff
+}
+.tombol-pinterest:link, .tombol-pinterest:visited {
+    color: #fff
+}
+.tombol-pinterest:active, .tombol-pinterest:hover {
+    background-color: #c7371e;
+    color: #fff
+}
+.tombol-linkedin {
+    background-color: #0e76a8;
+    border-radius: 0;
+    color: #fff
+}
+.tombol-linkedin:link, .tombol-linkedin:visited {
+    color: #fff
+}
+.tombol-linkedin:active, .tombol-linkedin:hover {
+    background-color: #0b6087;
+    color: #fff
+}
