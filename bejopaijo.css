@@ -1,0 +1,389 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #494a4f;
+  overflow: hidden;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 35px 1fr  ;
+  grid-template-columns: 1fr 4.5fr 2fr;
+  height: 100vh;
+  grid-template-areas: 
+    "header header up-content"
+    "main main right-aside"
+    "low-content low-content actions"
+ ;
+  grid-gap: 0;
+  padding: 0;
+}
+
+.header {
+  grid-area: header;
+  background-color:#000;
+  padding: 10px;
+  text-align: left;
+}
+
+.header h1 {
+  font-size: 1em;
+}
+
+.header h1 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.main {
+  grid-area: main;
+  background-color: black;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+ .up-content {
+      flex: 1;
+      background-color: #2c2c2c;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .channel-buttons {
+      display: flex;
+      background-color: #1c1c1c;
+    }
+
+    .channel-button {
+      flex: 1;
+      padding: 10px;
+      background-color: #1c1c1c;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      text-align: center;
+      position: relative; /* Tambahkan ini */
+    }
+
+    .channel-button::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 3px;
+      background: yellow;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transition: width 0.3s, left 0.3s;
+    }
+
+    .channel-button.active::after {
+      width: 100%;
+      left: 0;
+    }
+      .channel-button.active {
+    background-color: #444;
+}
+
+
+.right-aside {
+  grid-area: right-aside;
+  background-color: #494a4f;
+  padding: 10px;
+  overflow-y: auto;
+  max-height: calc(110vh - 100px);
+}
+
+.low-content {
+  grid-area: low-content;
+  background-color: #fff;
+  padding: 10px;
+  height: 30px;
+}
+
+.marquee {
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #000;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 0.8em;
+  color: #fff;
+}
+
+.right-aside h2, 
+.low-content h2, 
+.right-aside p, 
+.low-content p {
+  font-size: 1em;
+  color: #fff;
+}
+
+.right-aside h2, 
+.low-content h2 {
+  font-size: 1.2em;
+}
+
+@media (max-width: 678px) {
+ .container {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto 1fr ;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "header"
+      "main"
+      "low-content"
+            "actions"
+      "up-content"
+      "right-aside";
+
+  }
+
+  .main iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+justify-content: center;
+  }
+
+  .right-aside {
+    max-height: calc(100vh - 280px);
+    height: auto;
+  }
+}
+
+.event {
+  margin-bottom: 10px;
+  background-color: #393a3f;
+  border-radius: 5px;
+  position: relative;
+}
+
+.event2 {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #393a3f;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.copy-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.copy-button svg {
+  width: 16px;
+  height: 16px;
+  fill: #fff;
+}
+
+.kotak {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left, 
+.center, 
+.right {
+  flex: 1;
+  text-align: center;
+}
+
+.left img, 
+.right img {
+  max-width: 25px;
+}
+
+.left .team, 
+.right .team {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.center .date1, 
+.center .wak, 
+.center .jam {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.center .jam {
+  color: red;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.buttons-row {
+  display: flex;
+  gap: 5px;
+}
+
+.buttons-row:last-child {
+  margin-bottom: 0;
+}
+
+.button {
+  background-color: #494a4f;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 8px;
+  margin-bottom: 10px;
+}
+
+.button:hover {
+  background-color: #ffc700;
+}
+
+.buttons-row a {
+  display: flex;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  background-color: #494a4f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.buttons-row a:hover {
+  background-color: #ffc700;
+  transform: scale(1.05);
+}
+
+.sport-channel .kotak {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sport-channel .left {
+  margin-right: 5px;
+}
+
+.sport-channel .left img {
+  max-width: 60px;
+}
+
+.sport-channel .right p {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+}
+
+      
+  
+      .content {
+    padding: 20px;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+.events, .channels {
+    display: flex;
+    flex-direction: column;
+}
+
+.event, .channel {
+    margin-bottom: 15px;
+}
+
+.event span, .channel span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.actions {
+       grid-area: actions;
+    padding: 5px;
+    background-color: #1c1c1c;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.actions a {
+    padding: 5px;
+    background-color: #444;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    flex-grow: 1;
+    margin: 0 5px;
+       text-decoration: none;
+              text-align: center;
+       font-size: 14px;
+}
+
+.actions a:hover {
+    background-color: #555;
+}
+      
+       .warning-message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+background-color: rgba(0, 0, 0, 0.8);
+    color: black; /* Warna teks */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+    z-index: 9999; /* Menentukan lapisan di atas elemen lain */
+  }
