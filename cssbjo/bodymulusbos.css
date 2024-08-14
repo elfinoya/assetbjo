@@ -299,7 +299,7 @@ a:hover, a:visited, a:link, a:active
  
 .atas {
   position: fixed;
-  top: 50%;
+  top: 0;
   left: 0;
   z-index: 100;
   background: #05224e);
